@@ -1,15 +1,14 @@
 # jjrmacleod.github.io
 Repository for the J J R Macleod website
 
-
-https://jjrmacleod.github.io/
-
-
+* View online - https://jjrmacleod.github.io/
+* View in git - https://github.com/jjrmacleod/jjrmacleod.github.io
 
 Based on a template 
 * From https://onepagelove.com
 * https://onepagelove.com/aria
 * https://demos.onepagelove.com/html/aria/
+* https://jjrmacleod.github.io/template_files/documentation/
 
 
 
@@ -17,7 +16,6 @@ http://localhost/jjrmacleod.github.io.git/trunk/images/header-background.jpg
 header-background.jpg (JPEG Image, 1920 × 1080 pixels)
 
 816x957
-
 
 
 
