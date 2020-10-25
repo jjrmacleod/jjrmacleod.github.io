@@ -18,8 +18,6 @@ header-background.jpg (JPEG Image, 1920 × 1080 pixels)
 816x957
 
 
-
-
 Content outline
 * Introduction - introduction
 * Early life - early_life
