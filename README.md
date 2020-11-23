@@ -32,4 +32,8 @@ Content outline
 
 
 
+Remove spaces from filenames...
+`for file in *.jpg; do mv "$file" "$(echo $file | sed 's/ /_/g')"; done`
 
+Make filenames lowecase...
+`rename 'y/A-Z/a-z/' *`
