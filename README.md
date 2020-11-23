@@ -37,3 +37,9 @@ Remove spaces from filenames...
 
 Make filenames lowecase...
 `rename 'y/A-Z/a-z/' *`
+
+Github notes
+`git clone git@github.com:jjrmacleod/jjrmacleod.github.io.git`
+`git fetch origin`
+`git pull`
+`git commit -a -m "all fixed"`
