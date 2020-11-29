@@ -69,6 +69,60 @@ Page 1  p2 website pics  p3 pictures  p4 Pictures  p5 Images
 
 ```
 
+page_1:
+1_jjrm_portrait.jpg
+2_birthplace.jpg
+7_86rp_2020.jpg
+10_15kg.jpg
+3_rev_rm.jpg
+8_ags_old.jpg
+11_jm_duncan.jpg
+4_free_church_keith.jpg
+9_ags_class_photo.jpg
+12_pi_leipzig.jpg
+5_fc_manse_keith.jpg
+13_lh_med_coll.jpg
+6_g_st_ch_2020.jpg
+
+page_2:
+1_jjrm_1903.jpg
+3_1913_monograph.jpg
+7_disc_of_ins.jpg
+10_best.jpg
+4_med_sch_toronto_1922.jpg
+8_jjrm_toronto.jpg
+11_banting.jpg
+5_wife_in_garden.jpg
+9_collip.jpg
+2_med_sch_and_lab_ohio.jpg
+6_45_nanton_ave.jpg
+
+page_3:
+1_bantings_idea.jpg
+3_thomas_fraser_.jpg
+5_banting_best_and_dog.jpg
+2_john_rennie.jpg
+4_randf_paper.jpg
+
+page_4:
+1_collip_at_the_lab_bench.jpg
+2_first_presentation.jpg
+3a_early_patient_before_and_after_starting_insulin.jpg
+3b_early_patient_before_and_after_8_weeks_on_insulin.jpg
+3c_leonard_thomson_the_first_person_teated_with_insulin.jpg
+4_first_publication_on_insulin.jpg
+
+page_5:
+1_first_presentation_to_aap_by_macleod.jpg
+2b_macleods_nobel_medal.jpg
+1a_first_uk_paper_on_insulin.jpg
+3_macleod_ca_1928.jpg
+2_nobel_citation_1923.jpg
+4_prof_ja_macwilliam.jpg
+2a_macleods_nobel_medal.jpg
+5_pand_j_13_april_1928.jpg
+
+
 
 Remove spaces from filenames...
 `for file in *.jpg; do mv "$file" "$(echo $file | sed 's/ /_/g')"; done`
