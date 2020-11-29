@@ -840,9 +840,11 @@ input[type='checkbox'] {
 }
 
 .basic-1 .image-container:hover img {
+	/*
 	-moz-transform: scale(1.15);
 	-webkit-transform: scale(1.15);
 	transform: scale(1.15);
+	*/
 } 
 /* end of hover animation */
 
@@ -2445,3 +2447,16 @@ a:hover.back-to-top {
 	/* end of navigation */
 }
 /* end of min-width width 1200px */
+
+
+/* JJRM additions by AG */
+.body-images {
+	text-align: center;
+}
+.body-images img {
+	max-height: 200px;
+	margin: 10px !important;
+}
+.body-images img.l-ver {
+	max-height: 300px;
+}
