@@ -122,6 +122,21 @@ page_5:
 2a_macleods_nobel_medal.jpg
 5_pand_j_13_april_1928.jpg
 
+page_6:
+1_craigievar.jpg
+2_agsfp_dinner.jpg
+3_jjr_macleod_last_picture.jpg
+4_p_and_j_18th_march_1935.jpg
+5_p_and_j_20th_march_1935.jpg
+6_gravestone_in_allenvale_cemetery.jpg
+7_professor_michael_bliss.jpg
+8_dr_mj_williams_and_his_1993_biography.jpg
+9_professor_m_bliss_dr_mj_williams_and_professor_neva_haites.jpg
+9a_memorial_plaque.jpg
+10_jjr_macleod_centre_for_diabetes_endocrinology_and_metabolism_.jpg
+10a_professor_bliss_1st_nov_2013.jpg
+10b_opening_of_centre.jpg
+
 
 
 Remove spaces from filenames...
