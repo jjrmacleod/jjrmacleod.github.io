@@ -31,6 +31,43 @@
 	
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
+
+    <!-- 
+        Google map for the trail 
+        https://developers.google.com/maps/documentation/javascript/adding-a-google-map
+    -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA667WhYQmT6iPK2CAvtlxLnIbUCJbaUJ8&callback=initMap&libraries=&v=weekly" defer></script>
+    <script>
+        // This example displays a marker at the center of Australia.
+        // When the user clicks the marker, an info window opens.
+        function initMap() {
+          const uluru = { lat: 57.147480, lng: -2.095400 };
+          const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 9,
+            center: uluru,
+          });
+          const contentString =
+            "<img src=\"images/10_15kg.jpg\" />" +
+            "<h4>JR Macleod's house on Kingsgate</h4>" +
+            "<p>In 1895, in the middle of his university studies, the Macleod family moved to  a larger, newly built house named ‘Dunkeith’ (now 15 Kings Gate).</p>";
+          const infowindow = new google.maps.InfoWindow({
+            content: contentString,
+          });
+          const marker = new google.maps.Marker({
+            position: uluru,
+            map,
+            title: "JJR Macleod's house on Kingsgate",
+          });
+          marker.addListener("click", () => {
+            infowindow.open(map, marker);
+          });
+        }
+      </script>
+  
+  </head>
+
+
+
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
@@ -84,16 +121,13 @@
                     <a class="nav-link page-scroll" href="#legacy">His legacy</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#history_of_diabetes">The history of Diabetes</a>
+                    <a class="nav-link page-scroll" href="#jjr_macleod_trail">The JJR Macleod Trail</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#diabetes_in_aberdeen">Diabetes in Aberdeen</a>
+                    <a class="nav-link page-scroll" href="#history_of_diabetes_in_aberdeen">History Diabetes in Aberdeen</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#medical_innovation_in_aberdeen">Medical innovation in Aberdeen</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#about">About</a>
                 </li>
             </ul>
         </div>
@@ -417,16 +451,19 @@
     <!-- end of intro -->
 
 
-    <!-- The history of Diabetes -->
-    <div id="history_of_diabetes" class="basic-1">
+    <!--The History of Diabetes in Aberdeen -->
+    <div id="jjr_macleod_trail" class="basic-1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-container">
-                        <div class="section-title">history of Diabetes</div>
-<h2>The history of Diabetes</h2>
+                        <div class="section-title">JJR Macleod Trail</div>
+<h2>The JJR Macleod Trail</h2>
+<p>The JJR Macleod trail guides you round all the places in Aberdeen that are associated with JJR Macleod.</p>
+<p>This is currently at a very early stage.</p>
+<!--The div element for the map -->
+<div id="map"></div>
 
-<p>Text here... Phasellus tristique placerat augue a blandit. Mauris aliquam tempus elit a feugiat. Donec ut varius lacus. Aenean consequat posuere nisl id finibus. Morbi dictum tristique nisl sed rhoncus. Vivamus hendrerit, mi eget iaculis interdum, erat diam dignissim ligula, in tincidunt eros diam ac magna. Vestibulum pulvinar at ligula sit amet maximus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In auctor neque ut risus bibendum, vitae venenatis eros commodo. Vestibulum nec nibh sit amet dolor dignissim placerat. Quisque vestibulum risus a lobortis viverra. Aenean facilisis varius ante, non efficitur enim porta a. </p>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -435,14 +472,14 @@
     <!-- end of intro -->
 
 
-    <!-- Diabetes in Aberdeen -->
-    <div id="diabetes_in_aberdeen" class="basic-1">
+    <!--The History of Diabetes in Aberdeen -->
+    <div id="history_of_diabetes_in_aberdeen" class="basic-1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-container">
                         <div class="section-title">Diabetes in Aberdeen</div>
-<h2>Diabetes in Aberdeen</h2>
+<h2>The history of Diabetes in Aberdeen</h2>
 <p>Text here... Vestibulum diam tellus, lacinia semper augue at, dapibus posuere erat. Mauris pulvinar nibh dolor, dapibus tincidunt ligula pretium eu. Pellentesque euismod ultrices arcu, quis ultrices libero scelerisque mattis. Ut volutpat leo justo, in porttitor elit finibus id. Cras molestie nunc et dolor maximus, at hendrerit nibh faucibus. Aliquam efficitur nec leo a feugiat. Aliquam iaculis nunc mi, eu ornare ante congue sed. Nullam pretium ultricies justo porttitor accumsan. Nam scelerisque dignissim mauris at mattis. Nam vel dui dui. Morbi aliquet facilisis justo, in maximus ex venenatis ut. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
 <p>Notes on R. D. Lawrence.</p>
                     </div> <!-- end of text-container -->

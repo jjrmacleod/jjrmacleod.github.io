@@ -2460,3 +2460,14 @@ a:hover.back-to-top {
 .body-images img.l-ver {
 	max-height: 300px;
 }
+
+/* Set the size of the div element that contains the map */
+#map {
+	height: 600px;
+	width: 100%;
+}
+#map img {
+	max-width:100px;
+	max-height: 150px;
+	float: right;
+}
