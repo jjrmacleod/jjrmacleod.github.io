@@ -41,25 +41,28 @@
         // This example displays a marker at the center of Australia.
         // When the user clicks the marker, an info window opens.
         function initMap() {
-          const uluru = { lat: 57.147480, lng: -2.095400 };
+          const map_center = { lat: 57.147457, lng: -2.131553 };  
           const map = new google.maps.Map(document.getElementById("map"), {
             zoom: 9,
-            center: uluru,
+            center: map_center,
           });
-          const contentString =
+
+          const p1_ll = { lat: 57.147480, lng: -2.095400 };
+          const p1_t = "JJR Macleod's house on Kingsgate";
+          const p1_c =
             "<img src=\"images/10_15kg.jpg\" />" +
             "<h4>JR Macleod's house on Kingsgate</h4>" +
             "<p>In 1895, in the middle of his university studies, the Macleod family moved to  a larger, newly built house named ‘Dunkeith’ (now 15 Kings Gate).</p>";
-          const infowindow = new google.maps.InfoWindow({
-            content: contentString,
+          const p1_i = new google.maps.InfoWindow({
+            content: p1_c,
           });
-          const marker = new google.maps.Marker({
-            position: uluru,
+          const p1_m = new google.maps.Marker({
+            position: p1_ll,
             map,
-            title: "JJR Macleod's house on Kingsgate",
+            title: p1_t,
           });
-          marker.addListener("click", () => {
-            infowindow.open(map, marker);
+          p1_m.addListener("click", () => {
+            p1_i.open(map, p1_m);
           });
         }
       </script>
