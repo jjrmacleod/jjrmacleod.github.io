@@ -635,58 +635,68 @@
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
 
-        <!-- 
-        Google map for the trail 
-        https://developers.google.com/maps/documentation/javascript/adding-a-google-map
+
+    <!-- 
+    Google map for the trail 
+    https://developers.google.com/maps/documentation/javascript/adding-a-google-map
     -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA667WhYQmT6iPK2CAvtlxLnIbUCJbaUJ8&callback=initMap&libraries=&v=weekly" defer></script>
     <script>
-        // This example displays a marker at the center of Australia.
-        // When the user clicks the marker, an info window opens.
+    function initMap() {
 
-        function initMap() {
-
-          const map_center = { lat: 57.147457, lng: -2.131553 };  
-          const map = new google.maps.Map(document.getElementById("map"), {
+        const map_center = { lat: 57.147457, lng: -2.131553 };  
+        const map = new google.maps.Map(document.getElementById("map"), {
             zoom: 11,
             center: map_center,
-          });
+        });
 
-          const p1_ll = { lat: 57.147480, lng: -2.095400 };
-          const p1_t = "JJR Macleod's house on Kingsgate";
-          const p1_c =
-            "<img src=\"images/10_15kg.jpg\" />" +
-            "<h4>JR Macleod's house on Kingsgate</h4>" +
-            "<p>In 1895, in the middle of his university studies, the Macleod family moved to  a larger, newly built house named ‘Dunkeith’ (now 15 Kings Gate).</p>";
-          const p1_i = new google.maps.InfoWindow({
+        const p1_ll = { lat: 57.147480, lng: -2.095400 };
+        const p1_t = "JJR Macleod's house on Kingsgate";
+        const p1_c =
+        "<img src=\"images/10_15kg.jpg\" />" +
+        "<h4>JR Macleod's house on Kingsgate</h4>" +
+        "<p>In 1895, in the middle of his university studies, the Macleod family moved to  a larger, newly built house named ‘Dunkeith’ (now 15 Kings Gate).</p>";
+        const p1_i = new google.maps.InfoWindow({
             content: p1_c,
-          });
-          const p1_m = new google.maps.Marker({
+        });
+        const p1_m = new google.maps.Marker({
             position: p1_ll,
             map,
             title: p1_t,
-          });
-          p1_m.addListener("click", () => {
+        });
+        p1_m.addListener("click", () => {
             p1_i.open(map, p1_m);
-          });
+        });
 
-          $.getJSON('trail_data.json', function (data) {
+        var infowindow = new google.maps.InfoWindow();
+        var marker, i;
+        var bounds = new google.maps.LatLngBounds(); 
+
+        $.getJSON('trail_data.json', function (data) {
             trail_data = data.trail;
             for(var i = 0; i < trail_data.length; i++) {
                 var obj = trail_data[i];
 
                 console.log(obj.name);
+                const info_content = "<img src=\"images/" + obj.image + "\" /><h4>" + obj.name + "</h4><p>" + obj.description + "</p>";
+                console.log(info_content);
                 const latLng = new google.maps.LatLng(obj.lat, obj.lon);
-                new google.maps.Marker({
+                marker = new google.maps.Marker({
                     position: latLng,
                     map: map,
                 });
+                google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                    return function() { infowindow.setContent(info_content); infowindow.open(map, marker); }
+                })(marker, i));
+
+                bounds.extend(marker.position); 
 
             }
-          });
-        }
+            map.fitBounds(bounds);
+        });
+    }
 
-      </script>
+    </script>
 
 </body>
 </html>

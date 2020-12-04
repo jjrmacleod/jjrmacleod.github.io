@@ -2488,8 +2488,12 @@ a:hover.back-to-top {
 	width: 100%;
 }
 
+/* info window pop-ups */
+.gm-style-iw-d {
+	width: 400px;
+}
 .gm-style-iw-d img {
-	max-width:100px;
+	max-width: 200px;
 	max-height: 150px;
 	float: right;
 }
