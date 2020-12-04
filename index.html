@@ -92,7 +92,7 @@
                     <a class="nav-link page-scroll" href="#legacy">His legacy</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#jjr_macleod_trail">The JJR Macleod Trail</a>
+                    <a class="nav-link page-scroll" href="#jjr_macleod_trail">The Trail</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#history_of_diabetes_in_aberdeen">History Diabetes in Aberdeen</a>
@@ -650,24 +650,6 @@
             center: map_center,
         });
 
-        const p1_ll = { lat: 57.147480, lng: -2.095400 };
-        const p1_t = "JJR Macleod's house on Kingsgate";
-        const p1_c =
-        "<img src=\"images/10_15kg.jpg\" />" +
-        "<h4>JR Macleod's house on Kingsgate</h4>" +
-        "<p>In 1895, in the middle of his university studies, the Macleod family moved to  a larger, newly built house named ‘Dunkeith’ (now 15 Kings Gate).</p>";
-        const p1_i = new google.maps.InfoWindow({
-            content: p1_c,
-        });
-        const p1_m = new google.maps.Marker({
-            position: p1_ll,
-            map,
-            title: p1_t,
-        });
-        p1_m.addListener("click", () => {
-            p1_i.open(map, p1_m);
-        });
-
         var infowindow = new google.maps.InfoWindow();
         var marker, i;
         var bounds = new google.maps.LatLngBounds(); 
@@ -695,6 +677,14 @@
             map.fitBounds(bounds);
         });
     }
+        /*
+        {
+            "name": "name",
+            "description": "description",
+            "lat": "57.000",
+            "lon": "-2.000",
+            "image": "tbc.jpg"
+        },*/
 
     </script>
 
