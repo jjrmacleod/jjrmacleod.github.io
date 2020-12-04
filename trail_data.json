@@ -1,0 +1,19 @@
+{
+    "trail": 
+    [
+        {
+            "name": "Place one",
+            "description": "Place one chat",
+            "lat": "57.14745",
+            "lon": "-2.141553",
+            "image": "10b_opening_of_centre.jpg"
+        },
+        {
+            "name": "Place two",
+            "description": "Place two chat",
+            "lat": "57.147157",
+            "lon": "-2.237553",
+            "image": "mri_scanner_mark_one.jpg"
+        }
+    ]
+}

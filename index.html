@@ -32,77 +32,9 @@
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
 
-    <!-- 
-        Google map for the trail 
-        https://developers.google.com/maps/documentation/javascript/adding-a-google-map
-    -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA667WhYQmT6iPK2CAvtlxLnIbUCJbaUJ8&callback=initMap&libraries=&v=weekly" defer></script>
-    <script>
-        // This example displays a marker at the center of Australia.
-        // When the user clicks the marker, an info window opens.
 
 
-        function initMap() {
-          const map_center = { lat: 57.147457, lng: -2.131553 };  
-          const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 9,
-            center: map_center,
-          });
 
-          const p1_ll = { lat: 57.147480, lng: -2.095400 };
-          const p1_t = "JJR Macleod's house on Kingsgate";
-          const p1_c =
-            "<img src=\"images/10_15kg.jpg\" />" +
-            "<h4>JR Macleod's house on Kingsgate</h4>" +
-            "<p>In 1895, in the middle of his university studies, the Macleod family moved to  a larger, newly built house named ‘Dunkeith’ (now 15 Kings Gate).</p>";
-          const p1_i = new google.maps.InfoWindow({
-            content: p1_c,
-          });
-          const p1_m = new google.maps.Marker({
-            position: p1_ll,
-            map,
-            title: p1_t,
-          });
-          p1_m.addListener("click", () => {
-            p1_i.open(map, p1_m);
-          });
-        }
-
-            /*
-
-      let map;
-
-      function initMap() {
-        map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 2,
-          center: new google.maps.LatLng(2.8, -187.3),
-          mapTypeId: "terrain",
-        });
-        // Create a <script> tag and set the USGS URL as the source.
-        const script = document.createElement("script");
-        // This example uses a local copy of the GeoJSON stored at
-        // http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp
-        script.src = "trail.js";
-        document.getElementsByTagName("head")[0].appendChild(script);
-      }
-
-      // Loop through the results array and place a marker for each
-      // set of coordinates.
-      const eqfeed_callback = function (results) {
-        for (let i = 0; i < results.features.length; i++) {
-          const coords = results.features[i].geometry.coordinates;
-          const latLng = new google.maps.LatLng(coords[1], coords[0]);
-          new google.maps.Marker({
-            position: latLng,
-            map: map,
-          });
-        }
-      };
-      */
-
-        
-      </script>
-  
   </head>
 
 
@@ -477,7 +409,7 @@
 <a class="image-popup-fit-width" href="images/9a_memorial_plaque.jpg" title="Memorial Plaque"><img src="images/9a_memorial_plaque.jpg" alt="Memorial Plaque"></a>
 <a class="image-popup-fit-width" href="images/10_jjr_macleod_centre_for_diabetes_endocrinology_and_metabolism.jpg" title="JJR Macleod Centre for Diabetes Endocrinology and Metabolism"><img src="images/10_jjr_macleod_centre_for_diabetes_endocrinology_and_metabolism.jpg" alt="JJR Macleod Centre for Diabetes Endocrinology and Metabolism"></a>
 <a class="image-popup-fit-width" href="images/10a_professor_bliss_1st_nov_2013.jpg" title="Professor M Bliss"><img src="images/10a_professor_bliss_1st_nov_2013.jpg" alt="Professor M Bliss"></a>
-<a class="image-popup-fit-width" href="images/10b_opening_of_centre.jpg" title="Opening of the Centre"><img src="images/10b_opening_of_centre.jpg" alt="Opening of the Centre"></a>
+<a class="image-popup-fit-width" href="images/10b_opening_of_centre.jpg" title="Opening of the Centre in 2013"><img src="images/10b_opening_of_centre.jpg" alt="Opening of the Centre in 2013"></a>
 
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
@@ -690,7 +622,7 @@
     </div> <!-- end of copyright --> 
     <!-- end of copyright -->
     
-    	
+  
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
@@ -702,6 +634,59 @@
     <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+
+        <!-- 
+        Google map for the trail 
+        https://developers.google.com/maps/documentation/javascript/adding-a-google-map
+    -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA667WhYQmT6iPK2CAvtlxLnIbUCJbaUJ8&callback=initMap&libraries=&v=weekly" defer></script>
+    <script>
+        // This example displays a marker at the center of Australia.
+        // When the user clicks the marker, an info window opens.
+
+        function initMap() {
+
+          const map_center = { lat: 57.147457, lng: -2.131553 };  
+          const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 11,
+            center: map_center,
+          });
+
+          const p1_ll = { lat: 57.147480, lng: -2.095400 };
+          const p1_t = "JJR Macleod's house on Kingsgate";
+          const p1_c =
+            "<img src=\"images/10_15kg.jpg\" />" +
+            "<h4>JR Macleod's house on Kingsgate</h4>" +
+            "<p>In 1895, in the middle of his university studies, the Macleod family moved to  a larger, newly built house named ‘Dunkeith’ (now 15 Kings Gate).</p>";
+          const p1_i = new google.maps.InfoWindow({
+            content: p1_c,
+          });
+          const p1_m = new google.maps.Marker({
+            position: p1_ll,
+            map,
+            title: p1_t,
+          });
+          p1_m.addListener("click", () => {
+            p1_i.open(map, p1_m);
+          });
+
+          $.getJSON('trail_data.json', function (data) {
+            trail_data = data.trail;
+            for(var i = 0; i < trail_data.length; i++) {
+                var obj = trail_data[i];
+
+                console.log(obj.name);
+                const latLng = new google.maps.LatLng(obj.lat, obj.lon);
+                new google.maps.Marker({
+                    position: latLng,
+                    map: map,
+                });
+
+            }
+          });
+        }
+
+      </script>
 
 </body>
 </html>
