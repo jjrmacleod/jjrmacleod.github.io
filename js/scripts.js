@@ -383,7 +383,17 @@
 			}
 		}
 		
-	});
-
+    });
+    
+    /* captions */
+    $( '.image-popup-fit-width').hover(
+        function() {
+            var alt = $(this).children("img").attr("alt");
+            $( this ).append( $( "<div>" + alt + "</div>" ) );
+           
+        }, function() {
+            $( this ).find( "div" ).last().remove();
+        }
+    );
 
 })(jQuery);
