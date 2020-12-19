@@ -2457,8 +2457,8 @@ a:hover.back-to-top {
 	max-height: 220px;
 	margin: 10px !important;
 }
-.body-images img.l-ver {
-	max-height: 300px;
+.body-images a {
+	
 }
 
 .basic-1 .col-lg-4 .image-container {
@@ -2469,6 +2469,7 @@ a:hover.back-to-top {
 .image-popup-fit-width {
 	position: relative;
 	display: inline-block;
+	border-radius: 0.35rem;
 }
 .image-popup-fit-width div{
 	position: absolute;
@@ -2479,7 +2480,7 @@ a:hover.back-to-top {
 	padding: 0px 10px 15px 10px;
 	background-color: rgba(255, 255, 255, 0.7);
 	color: #113448;
-	font-size: 1rem/1.5625rem
+	font-size: 1rem/1.5625rem;
 }
 
 /* Set the size of the div element that contains the map */

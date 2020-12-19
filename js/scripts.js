@@ -369,7 +369,7 @@
 		image: {
 			verticalFit: true,
 			titleSrc: function(item) {
-				return item.el.attr('title');
+                return item.el.find('img').attr('alt');
 			}
 		},
 		gallery: {
@@ -393,6 +393,19 @@
            
         }, function() {
             $( this ).find( "div" ).last().remove();
+        }
+    );
+
+    /* legend_items */
+
+    $( '.legend_items a').click(
+        function() {
+            console.log( $(this).attr("href") );
+            var image_id = $(this).attr("href");
+            $( image_id ).css( "background-color", "#14bf98" );
+            setTimeout(function(){
+                $( image_id ).css( "background-color", "#ffffff" );
+            }, 10000);
         }
     );
 
