@@ -2461,6 +2461,17 @@ a:hover.back-to-top {
 	
 }
 
+.text-container em {
+	text-decoration:#14bf98 wavy underline;
+	font-style: normal;
+}
+.text-container em:hover {
+	cursor: pointer;
+}
+.text-container em sup {
+	text-decoration: none;
+}
+
 .basic-1 .col-lg-4 .image-container {
     overflow: visible !important;
 }

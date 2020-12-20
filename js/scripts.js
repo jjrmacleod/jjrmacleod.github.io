@@ -397,18 +397,29 @@
     );
 
     /* legend_items */
-
     $( '.legend_items a').click(
         function() {
             console.log( $(this).attr("href") );
             var image_id = $(this).attr("href");
             $( image_id ).css( "background-color", "#14bf98" );
             setTimeout(function(){
-                $( image_id ).css( "background-color", "#ffffff" );
+                $( image_id ).css( { 
+                    transition: 'background-color 1s ease-in-out', 
+                    "background-color": "#fff" 
+                } );
             }, 10000);
         }
     );
 
+
+    var cells = $('text-container em');
+    $('.text-container em').each(function () {
+        var item_id = $(this).attr("id");
+        $(this).append('<sup>Fig' + item_id + '</sup>');
+   //     $( ".inner" ).append( "<p>Test</p>" );
+    });
+
+    //$( "text-container em" ).append( "<p>Test</p>" );
     
 
 })(jQuery);
