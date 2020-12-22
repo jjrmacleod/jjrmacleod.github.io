@@ -415,9 +415,23 @@
     var cells = $('text-container em');
     $('.text-container em').each(function () {
         var item_id = $(this).attr("id");
-        $(this).append('<sup>Fig' + item_id + '</sup>');
-   //     $( ".inner" ).append( "<p>Test</p>" );
+        $(this).append('<sup>Fig ' + item_id + '</sup>');
     });
+
+    $( '.text-container em').hover(
+        function(){
+            var image_id = '#f' + $(this).attr("id");
+            $( image_id ).css( "background-color", "#14bf98" );
+            setTimeout(function(){
+                $( image_id ).css( { 
+                    transition: 'background-color 1s ease-in-out', 
+                    "background-color": "#fff" 
+                } );
+            }, 10000);
+        }
+    )
+
+
 
     //$( "text-container em" ).append( "<p>Test</p>" );
     
