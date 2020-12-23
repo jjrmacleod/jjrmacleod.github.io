@@ -421,14 +421,18 @@
     $( '.text-container em').hover(
         function(){
             var image_id = '#f' + $(this).attr("id");
-            $( image_id ).css( "background-color", "#14bf98" );
-            setTimeout(function(){
-                $( image_id ).css( { 
-                    transition: 'background-color 1s ease-in-out', 
-                    "background-color": "#fff" 
-                } );
-            }, 10000);
-        }
+            $( image_id ).css( { 
+                    transition: 'background-color 0.5s ease-in-out', 
+                    "background-color": "#14bf98" 
+            });
+        },
+        function(){
+            var image_id = '#f' + $(this).attr("id");
+            $( image_id ).css( { 
+                transition: 'background-color 0.5s ease-in-out', 
+                "background-color": "#fff" 
+        });
+        }     
     )
 
 
