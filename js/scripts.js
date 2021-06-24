@@ -389,7 +389,7 @@
     $( '.image-popup-fit-width').hover(
         function() {
             var alt = $(this).children("img").attr("alt");
-            $( this ).append( $( "<div>" + alt + "</div>" ) );
+            $( this ).append( $( '<div class="legend">' + alt + '</div>' ) );
            
         }, function() {
             $( this ).find( "div" ).last().remove();
@@ -417,6 +417,13 @@
         var item_id = $(this).attr("id");
         $(this).append('<sup>' + item_id + '</sup>');
     });
+
+    $('.image-popup-fit-width').each(function () {
+        var item_id = $(this).attr("id");
+        var item_number = item_id.replace('f','');
+        $(this).append('<div class="number">' + item_number + '</div>');
+    });
+
 
     $( '.text-container em').hover(
         function(){

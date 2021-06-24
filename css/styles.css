@@ -2471,15 +2471,16 @@ a:hover.back-to-top {
 .text-container em sup {
     background-color: #113448;
     color: #fff;
-    height: 16px;
-    width: 16px;
-    border-radius: 8px;
+    height: 12px;
+    width: 12px;
+    border-radius: 6px;
     display: inline-block;
-    padding: 7px 0px 0px 0px;
+    padding: 5px 0px 0px 0px;
     margin: 0px 0px 0px 1px;
     text-align: center;
     vertical-align: middle;
     font-weight: bold;
+	font-size: 8px;
 }
 
 .basic-1 .col-lg-4 .image-container {
@@ -2492,9 +2493,8 @@ a:hover.back-to-top {
 	display: inline-block;
 	border-radius: 0.35rem;
 }
-.image-popup-fit-width div{
+.image-popup-fit-width div.legend{
 	position: absolute;
-	display: block;
 	left: 0px;
 	right: 0px;
 	bottom: 0px;
@@ -2502,6 +2502,26 @@ a:hover.back-to-top {
 	background-color: rgba(255, 255, 255, 0.7);
 	color: #113448;
 	font-size: 1rem/1.5625rem;
+}
+.image-popup-fit-width div.number{
+	position: absolute;
+	top: 18px;
+	left: 18px;
+	background-color: #113448;
+	color: #fff;
+	height: 20px;
+	width: 20px;
+	border-radius: 10px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 1px;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 19px;
+	box-shadow: 0px 0px 5px #fff;
+}
+
+.mfp-close {
+    font-size: 58px;
 }
 
 /* Set the size of the div element that contains the map */
