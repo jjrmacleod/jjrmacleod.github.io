@@ -2495,13 +2495,14 @@ a:hover.back-to-top {
 }
 .image-popup-fit-width div.legend{
 	position: absolute;
-	left: 0px;
-	right: 0px;
-	bottom: 0px;
-	padding: 0px 10px 15px 10px;
-	background-color: rgba(255, 255, 255, 0.7);
-	color: #113448;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	padding: 0px 10px 5px 10px;
+	background-color: rgba(17, 52, 72, 0.8);
+	color: #fff;
 	font-size: 1rem/1.5625rem;
+	border-radius: 0 0 0.35rem 0.35rem;
 }
 .image-popup-fit-width div.number{
 	position: absolute;
