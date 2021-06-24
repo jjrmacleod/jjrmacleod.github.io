@@ -2460,6 +2460,10 @@ a:hover.back-to-top {
 .body-images a {
 	
 }
+/* override, so images don't get chopped, 1_bantings_idea.jpg */
+.basic-1 .image-container {
+    overflow: inherit;
+}
 
 .text-container em {
 	font-style: normal;
