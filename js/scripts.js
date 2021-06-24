@@ -415,7 +415,7 @@
     var cells = $('text-container em');
     $('.text-container em').each(function () {
         var item_id = $(this).attr("id");
-        $(this).append('<sup>Fig ' + item_id + '</sup>');
+        $(this).append('<sup>' + item_id + '</sup>');
     });
 
     $( '.text-container em').hover(

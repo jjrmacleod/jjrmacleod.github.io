@@ -1,7 +1,7 @@
 # jjrmacleod.github.io
 Repository for the J J R Macleod website
 
-* View online - https://jjrmacleod.github.io/
+* View online - https://jjrmacleod.org
 * View in git - https://github.com/jjrmacleod/jjrmacleod.github.io
 
 Based on a template 

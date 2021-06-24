@@ -2462,14 +2462,24 @@ a:hover.back-to-top {
 }
 
 .text-container em {
-	text-decoration:#14bf98 wavy underline;
 	font-style: normal;
 }
 .text-container em:hover {
 	cursor: pointer;
+	text-decoration:#14bf98 wavy underline;
 }
 .text-container em sup {
-	text-decoration: none;
+    background-color: #113448;
+    color: #fff;
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 7px 0px 0px 0px;
+    margin: 0px 0px 0px 1px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
 }
 
 .basic-1 .col-lg-4 .image-container {
