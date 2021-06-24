@@ -734,10 +734,9 @@
             trail_data = data.trail;
             for(var i = 0; i < trail_data.length; i++) {
                 var obj = trail_data[i];
-
-                console.log(obj.name);
+                //console.log(obj.name);
                 const info_content = "<img src=\"images/" + obj.image + "\" /><h4>" + obj.name + "</h4><p>" + obj.description + "</p>";
-                console.log(info_content);
+                //console.log(info_content);
                 const latLng = new google.maps.LatLng(obj.lat, obj.lon);
                 marker = new google.maps.Marker({
                     position: latLng,
@@ -753,15 +752,6 @@
             map.fitBounds(bounds);
         });
     }
-        /*
-        {
-            "name": "name",
-            "description": "description",
-            "lat": "57.000",
-            "lon": "-2.000",
-            "image": "tbc.jpg"
-        },*/
-
     </script>
 
 </body>
