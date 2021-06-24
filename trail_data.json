@@ -55,14 +55,14 @@
             "description": "Macleod was a member of the Aberdeen Medico-Chirurgical Society, housed, at the time in the building at 29 King Street, which was completed in 1820 to the plans of Archibald Simpson",
             "lat": "57.149150",
             "lon": "-2.093520",
-            "image": "image_coming_soon.png"
+            "image": "former_medico_chirurgical_society.jpg"
         },
         {
             "name": "Marischal College",
             "description": "Macleod did his academic medical studies, from 1893 to 1898 at Marischal College",
             "lat": "57.149050",
             "lon": "-2.097286",
-            "image": "image_coming_soon.png"
+            "image": "marischal_college.jpg"
         },
         {
             "name": "Children’s Hospital in Castle Terrace",
@@ -76,10 +76,7 @@
             "description": "When Macleod was a student the main Infirmary, with medical and surgical facilities, was at Woolmanhill",
             "lat": "57.150218",
             "lon": "-2.105915",
-            "image": "image_coming_soon.png"
+            "image": "woolmanhill_hospital.jpg"
         }
-
-
-
     ]
 }
