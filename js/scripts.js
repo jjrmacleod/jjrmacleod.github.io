@@ -369,7 +369,10 @@
 		image: {
 			verticalFit: true,
 			titleSrc: function(item) {
-                return item.el.find('img').attr('alt');
+                var image_short = item.el.find('img').attr('alt');
+                var image_long = item.el.find('img').attr('title');
+                var image_caption = '<p>' + image_short + '</p><p><small>' + image_long + '</small></p>';
+                return image_caption;
 			}
 		},
 		gallery: {
@@ -377,7 +380,7 @@
 		},
 		zoom: {
 			enabled: true,
-			duration: 300, // don't foget to change the duration also in CSS
+			duration: 300, // don't forget to change the duration also in CSS
 			opener: function(element) {
 				return element.find('img');
 			}
@@ -424,6 +427,22 @@
         $(this).append('<div class="number">' + item_number + '</div>');
     });
 
+    $('.legend_items p').each(function () {
+        var legend_html = $(this).html();
+        //var legend_link = legend_html.find("a");
+        var legend_link = $(this).find("a").attr("href");
+        var legend_text = $(this).find("span").text();
+        var image_id = legend_link.replace('#','#f');
+        //console.log( 'test 1: ' + $(this).innerHTML );  // undefined
+        //console.log( 'test 2: ' + $(this).html );  // function js stuff
+        //console.log( 'test 3: ' + $(this).contents );  // function js stuff
+        console.log('var legend_html: ' + legend_html );
+        console.log('var legend_link: ' + legend_link );
+        console.log('var legend_text: ' + legend_text );
+        console.log('var image_id: ' + image_id );
+        $(legend_link + ' img').prop('title', legend_text);
+
+    });
 
     $( '.text-container em').hover(
         function(){

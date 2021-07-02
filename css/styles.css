@@ -2492,6 +2492,10 @@ a:hover.back-to-top {
 }
 
 
+.mfp-title p{
+	color: #fff !important;
+	margin-bottom: 0;
+}
 .image-popup-fit-width {
 	position: relative;
 	display: inline-block;
