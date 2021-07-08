@@ -2479,12 +2479,12 @@ a:hover.back-to-top {
     width: 14px;
     border-radius: 7px;
     display: inline-block;
-    padding: 5px 0px 0px 0px;
+    padding: 6px 0px 0px 0px;
     margin: 0px 0px 0px 1px;
     text-align: center;
     vertical-align: middle;
     font-weight: bold;
-	font-size: 12px;
+	font-size: 11px;
 }
 
 .basic-1 .col-lg-4 .image-container {
