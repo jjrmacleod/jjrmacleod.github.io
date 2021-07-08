@@ -217,22 +217,6 @@
         }
     );
 
-    /* legend_items */
-    $( '.legend_items a').click(
-        function() {
-            console.log( $(this).attr("href") );
-            var image_id = $(this).attr("href");
-            $( image_id ).css( "background-color", "#14bf98" );
-            setTimeout(function(){
-                $( image_id ).css( { 
-                    transition: 'background-color 1s ease-in-out', 
-                    "background-color": "#fff" 
-                } );
-            }, 10000);
-        }
-    );
-
-
     var cells = $('text-container em');
     $('.text-container em').each(function () {
         var item_id = $(this).attr("id");
@@ -243,23 +227,6 @@
         var item_id = $(this).attr("id");
         var item_number = item_id.replace('f','');
         $(this).append('<div class="number">' + item_number + '</div>');
-    });
-
-    $('.legend_items p').each(function () {
-        var legend_html = $(this).html();
-        //var legend_link = legend_html.find("a");
-        var legend_link = $(this).find("a").attr("href");
-        var legend_text = $(this).find("span").text();
-        var image_id = legend_link.replace('#','#f');
-        //console.log( 'test 1: ' + $(this).innerHTML );  // undefined
-        //console.log( 'test 2: ' + $(this).html );  // function js stuff
-        //console.log( 'test 3: ' + $(this).contents );  // function js stuff
-        console.log('var legend_html: ' + legend_html );
-        console.log('var legend_link: ' + legend_link );
-        console.log('var legend_text: ' + legend_text );
-        console.log('var image_id: ' + image_id );
-        $(legend_link + ' img').prop('title', legend_text);
-
     });
 
     $( '.text-container em').hover(
