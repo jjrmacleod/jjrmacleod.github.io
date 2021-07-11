@@ -2475,26 +2475,36 @@ a:hover.back-to-top {
 .text-container em sup {
     background-color: #113448;
     color: #fff;
-    height: 14px;
-    width: 14px;
-    border-radius: 7px;
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
     display: inline-block;
-    padding: 6px 0px 0px 0px;
+    padding: 6.5px 0px 0px 0px;
     margin: 0px 0px 0px 1px;
     text-align: center;
     vertical-align: middle;
     font-weight: bold;
 	font-size: 11px;
+	border: #113448 solid 1px;
 }
 
 .basic-1 .col-lg-4 .image-container {
     overflow: visible !important;
 }
 
-
+.img.mfp-img{
+	padding: 40px 0px 0px 0px;
+}
+.mfp-bottom-bar{
+	background-color: #113448;
+	padding: 5px 10px 10px 10px;
+}
 .mfp-title p{
 	color: #fff !important;
 	margin-bottom: 0;
+}
+.mfp-counter{
+	padding: 0px 10px 0px 0px;
 }
 .image-popup-fit-width {
 	position: relative;
@@ -2533,6 +2543,7 @@ a:hover.back-to-top {
 }
 .mfp-figure small {
 	font-size: 14px;
+	line-height: 16px;
 	color: #fff;
 }
 
