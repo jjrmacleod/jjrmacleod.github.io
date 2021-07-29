@@ -2450,6 +2450,9 @@ a:hover.back-to-top {
 
 
 /* JJRM additions by AG */
+.header h3 {
+	color: #fff;
+}
 .body-images {
 	text-align: center;
 }
