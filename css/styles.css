@@ -2081,7 +2081,7 @@ a:hover.back-to-top {
 	}
 
 	.header .text-container {
-		margin-top: 6.5rem;
+		margin-top: 1.5rem;
 	}
 	/* end of header */
 
@@ -2282,8 +2282,8 @@ a:hover.back-to-top {
 	
 	/* Header */
 	.header .header-content {
-		padding-top: 14.75rem;
-		padding-bottom: 17.5rem;
+		padding-top: 12.75rem;
+		padding-bottom: 15.5rem;
 	}
 	/* end of header */
 
@@ -2452,6 +2452,10 @@ a:hover.back-to-top {
 /* JJRM additions by AG */
 .header h3 {
 	color: #fff;
+	margin-bottom: 10px;
+}
+.crest{
+	margin: 4px 10px;
 }
 .body-images {
 	text-align: center;
