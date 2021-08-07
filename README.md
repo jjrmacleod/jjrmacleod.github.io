@@ -59,5 +59,5 @@ Make filenames lowecase...
 
 `convert -geometry x180 src/image1.png out/image1.png`
 
-`mogrify -resize x180 -path small/ *.jpg`
+`mogrify -resize x270 -path small/ *.jpg`
 
