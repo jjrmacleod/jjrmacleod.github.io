@@ -2462,6 +2462,7 @@ a:hover.back-to-top {
 }
 .body-images img {
 	max-height: 270px;
+	max-width: 90%;
 	margin: 10px !important;
 }
 .body-images a {
