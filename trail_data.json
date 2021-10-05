@@ -77,6 +77,13 @@
             "lat": "57.150218",
             "lon": "-2.105915",
             "image": "woolmanhill_hospital.jpg"
+        },
+        {
+            "name": "8 Rubislaw Den North",
+            "description": "In 1899 the Lawrence family moved to Rubislaw Den North",
+            "lat": "57.144700",
+            "lon": "-2.137340",
+            "image": "image_coming_soon.png"
         }
     ]
 }
