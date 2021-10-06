@@ -72,11 +72,18 @@
             "image": "castle_terrace_hospital.jpg"
         },
         {
-            "name": "Woolmanhill Hospital",
+            "name": "Woolmanhill Hospital, Formerly Aberdeen Royal Infirmary",
             "description": "When Macleod was a student the main Infirmary, with medical and surgical facilities, was at Woolmanhill",
             "lat": "57.150218",
             "lon": "-2.105915",
             "image": "woolmanhill_hospital.jpg"
+        },
+        {
+            "name": "Provost Skene’s House",
+            "description": "JJR will be celebrated in a new exhibition in, from Autumn 2021",
+            "lat": "57.148248",
+            "lon": "-2.097575",
+            "image": "provost_skenes_house.jpg"
         },
         {
             "name": "8 Rubislaw Den North",
