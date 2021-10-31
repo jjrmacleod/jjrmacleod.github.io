@@ -1,9 +1,8 @@
 /* Template: Aria - Business HTML Landing Page Template
-   Author: Inovatik
-   Created: Jul 2019
+   Author: Inovatik A Gaskell
+   Created: Jul 2019 / Modified 2021
    Description: Custom JS file
 */
-
 
 (function($) {
     "use strict"; 
@@ -19,7 +18,6 @@
 		}
 		hidePreloader();
 	});
-
 	
 	/* Navbar Scripts */
 	// jQuery to collapse the navbar on scroll
