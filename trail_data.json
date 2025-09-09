@@ -80,10 +80,17 @@
         },
         {
             "name": "Provost Skene’s House",
-            "description": "JJR will be celebrated in a new exhibition in, from Autumn 2021",
+            "description": "JJR will be celebrated in a new exhibition from Autumn 2021",
             "lat": "57.148248",
             "lon": "-2.097575",
             "image": "provost_skenes_house.jpg"
+        },
+        {
+            "name": "JJR Macleod Memorial Statue",
+            "description": "Statue in Duthie park, unveiled on the 12th October 2023",
+            "lat": "57.130992",
+            "lon": "-2.105592",
+            "image": "jjr_macleod_statue.jpg"
         }
     ]
 }
