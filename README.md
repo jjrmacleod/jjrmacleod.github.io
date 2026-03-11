@@ -27,7 +27,7 @@ Based on a template
 * JJR Macleod's legacy - legacy
 * The history of Diabetes - history_of_diabetes
 * Diabetes in Aberdeen - diabetes_in_aberdeen
-* About  - about
+* About - about
 
 
 ## Header image 
@@ -41,7 +41,7 @@ https://github.com/jjrmacleod/jjrmacleod.github.io/blob/master/images/original/h
 Remove spaces from filenames...
 `for file in *.jpg; do mv "$file" "$(echo $file | sed 's/ /_/g')"; done`
 
-Make filenames lowecase...
+Make filenames lowercase...
 `rename 'y/A-Z/a-z/' *`
 
 ## Github notes
@@ -61,3 +61,13 @@ Make filenames lowecase...
 
 `mogrify -resize x270 -path small/ *.jpg`
 
+`mogrify -resize x270 -path ../images/small/ *.jpg`
+
+`mogrify -resize x1000 -path ../images/ *.jpg`
+
+
+
+TODO: march 2026
+add image filenames to html
+make small
+make large
